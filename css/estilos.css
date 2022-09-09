@@ -1,0 +1,1089 @@
+.bodyIndex{
+    font-family: 'Lato', sans-serif;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+    }
+
+    .headerIndex img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .headerIndex a{
+        font-size: 15px;
+    }
+
+    .divNuestroTop1{
+        flex-direction: column;
+    }
+
+    .divNuestroTop2{
+        flex-direction: column;
+    }
+
+    .divNuestroTop1 img{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .divNuestroTop2 img{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor{
+        grid-template-columns: 0.5fr;
+        grid-template-rows: 0.1fr 0.5fr 1fr 0.1fr;
+        grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+    }
+   
+    .headerIndex{
+        flex-direction: column;
+    }
+
+    .headerIndex img{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .headerIndex ul{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .logoInicio{
+        margin-top: 20px;
+    }
+
+    .divNuestroTop1{
+        flex-direction: column;
+    }
+
+    .divNuestroTop2{
+        flex-direction: column;
+    }
+
+    .divNuestroTop1 img{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .divNuestroTop2 img{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
+
+   .footerIndex{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+   }
+
+}
+
+.headerIndex{
+    background-color: #9DD6AD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    grid-area: header;
+}
+
+.headerIndex img{
+    display: flex;
+}
+
+.headerIndex ul{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.logoInicio{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.menuPrincipalIndex ul li{
+    display: inline-block;
+}
+
+.mainIndex{
+    grid-area: main;
+}
+
+.tituloTYS{
+    text-align: center;
+    font-size: 50px;
+}
+
+.subtituloTYS{
+    text-align: center;
+    font-size: 40px;
+}
+
+.imagenInicio1{
+    width: 350px;
+    height: 300px;
+    padding: 50px;
+}
+
+.imagenInicio2{
+    width: 310px;
+    height: 300px;
+    padding: 50px;
+}
+
+.imagenInicio3{
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+}
+
+.divNuestroTop1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.divNuestroTop2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tituloNuestroTop{
+    text-align: center;
+    font-size: 40px;
+}
+
+.descripcionTOP{
+    display: inline-block;
+}
+
+.top1{
+    width: 400px;
+    height: 300px;
+    display: block;
+    padding: 15px;
+    background-color: #9DD6AD;
+}
+
+.top2{
+    width: 400px;
+    height: 300px; 
+    display: block;
+    padding: 15px;
+    background-color: #9DD6AD;
+}
+
+.top3{
+    width: 400px;
+    height: 300px;
+    display: block; 
+    padding: 15px;
+    background-color: #9DD6AD;
+}
+
+.top4{
+    width: 400px;
+    height: 300px; 
+    display: block;
+    padding: 15px;
+    background-color: #9DD6AD;
+}
+
+.tituloFTCCN{
+    text-align: center;
+    font-size: 40px;
+}
+
+.ftccn1{
+    width: 350px;
+    height: 300px; 
+    padding: 50px;
+}
+
+.ftccn2{
+    width: 300px;
+    height: 300px; 
+    padding: 50px;
+}
+
+.ftccn3{
+    width: 300px;
+    height: 300px; 
+    padding: 50px;
+}
+
+.footerIndex{
+    background-color: #9DD6AD;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logoFooter{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+.logoInstagram{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.logoFacebook{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.logoTwitter{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+
+
+.bodyOss{
+    font-family: 'Lato', sans-serif;
+}
+
+.headerOss{
+    background-color: #9DD6AD;
+    position: relative;
+}
+
+.logoInicioOss{
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    top: 2px;
+    left: 40px;
+}
+
+.menuOss ul{
+    position: absolute;
+    bottom: 25px;
+    left: 50%
+}
+
+.menuOss ul li{
+    display: inline-block;
+}
+
+.tituloOKSC{
+    text-align: center;
+}
+
+.subtituloOKSC{
+    text-align:center;
+}
+
+.botonvmdc{
+    background-color: #9DD6AD;
+
+    position: relative;
+    left: 550px;
+    right: 50%;
+
+    padding: 10px;
+}
+
+.imagenOss{
+    width: 300px;
+    height: 300px;
+
+    display: block;
+
+    position: relative;
+    top: 30px;
+    left: 520px;
+    
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.footerOss{
+    background-color: #9DD6AD;
+
+    position: relative;
+}
+
+.logoFooterOss{
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+    top: 5px;
+    left: 40px;
+}
+
+.TLDROSS{
+    text-align: center;
+}
+
+.logoInstagramOss{
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+
+    position: relative;
+    left: 80%;
+}
+
+.logoFacebookOss{
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+
+    position: relative;
+    left: 80%;
+}
+
+.logoTwitterOss{
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+
+    position: relative;
+    left: 80%;
+}
+
+
+
+.bodyEn{
+    font-family: 'Lato', sans-serif;
+}
+
+.headerEn{
+    background-color: #9DD6AD;
+    position: relative;
+}
+
+.logoInicioEn{
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    top: 2px;
+    left: 40px;
+}
+
+.menuPrincipalEn ul{
+    position: absolute;
+    bottom: 25px;
+    left: 50%
+}
+
+.menuPrincipalEn ul li{
+    display: inline-block;
+}
+
+.tituloEn{
+    text-align: center;
+}
+
+.tituloEstepona{
+    display: inline-block;
+    
+    position: relative;
+    bottom: 250px;
+    left: 25px;
+}
+
+.direccionEstepona{
+    display: inline-block;
+
+    position: relative;
+    right: 75px;
+    bottom: 220px;
+}
+
+.mapasEN{
+    display: inline-block;
+
+    width: 400px;
+    height: 300px;
+
+    position: relative;
+    left: 20px;
+}
+
+.horarioEstepona{
+    display: inline-block;
+
+    background-color: #9DD6AD;
+
+    list-style-type: none;
+
+    padding: 2px;
+
+    letter-spacing: 2px;
+
+    position: relative;
+    right: 230px;
+    bottom: 50px;
+}
+
+.imagenEstepona{
+
+    display: inline-block;
+
+    width: 400px;
+    height: 300px;
+
+    position: relative;
+    right: 50px;
+}
+
+
+.tituloHuelin{
+    display: inline-block;
+    
+    position: relative;
+    bottom: 250px;
+    left: 25px;
+}
+
+.direccionHuelin{
+    display: inline-block;
+
+    position: relative;
+    right: 46px;
+    bottom: 220px;
+}
+
+.horarioHuelin{
+    display: inline-block;
+
+    background-color: #9DD6AD;
+
+    list-style-type: none;
+
+    padding: 2px;
+
+    letter-spacing: 2px;
+
+    position: relative;
+    right: 290px;
+    bottom: 50px;
+}
+
+.imagenHuelin{
+
+    display: inline-block;
+
+    width: 400px;
+    height: 300px;
+
+    position: absolute;
+    top: 550px;
+    right: 0px;
+    bottom: 0px;
+    left: 880px;
+}
+
+
+
+.tituloTeatinos{
+    display: inline-block;
+    
+    position: relative;
+    bottom: 250px;
+    left: 25px;
+}
+
+.direccionTeatinos{
+    display: inline-block;
+
+    position: relative;
+    right: 60px;
+    bottom: 220px;
+}
+
+.horarioTeatinos{
+    display: inline-block;
+
+    background-color: #9DD6AD;
+
+    list-style-type: none;
+
+    padding: 2px;
+
+    letter-spacing: 2px;
+
+    position: relative;
+    right: 270px;
+    bottom: 50px;
+}
+
+.imagenTeatinos{
+
+    display: inline-block;
+
+    width: 400px;
+    height: 300px;
+
+    position: absolute;
+    top: 890px;
+    right: 0px;
+    bottom: 0px;
+    left: 880px;
+    
+}
+
+.footerEn{
+    background-color: #9DD6AD;
+
+    position: relative;
+}
+
+.contenedorMenu{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+   grid-template-areas:
+   "header header"
+   "main main"
+   "main main"
+   "footer footer";
+}
+
+@media screen and (max-width:768px){
+ .contenedorMenu{
+   grid-template-columns: 1fr;
+   grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
+   grid-template-areas: 
+   "header"
+   "main"
+   "main"
+   "footer";
+ }
+
+ .headerMenu ul{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+   .headerMenu img{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+   }
+
+   .headerMenu a{
+    font-size: 15px;
+   }
+}
+
+@media screen and (max-width:500px){
+ .contenedorMenu{
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+}
+
+.headerMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerMenu img{
+    justify-content: center;
+    align-content: center;
+}
+
+.headerMenu ul{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.logoInicioMenu{
+    margin-top: 20px;
+}
+
+.footerMenu{
+flex-direction: column;
+justify-content: center;
+align-content: center;
+}
+
+}
+
+
+.bodyMenu{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+}
+
+.headerMenu{
+    background-color: #9DD6AD;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    grid-area: header;
+}
+
+.headerMenu img{
+    display: flex;
+}
+
+.headerMenu ul{
+    display: flex;
+}
+
+.logoInicioMenu{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.headerMenu ul li{
+    display: inline-block;
+}
+
+
+.tituloMenu{
+    text-align: center;
+}
+
+.tituloSaladas{
+  text-align: center;
+}
+
+.mainMenu{
+    position: relative;
+    grid-area: main;
+}
+
+.menuSalado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.terneraMenu{
+    background-color: #9dd6add7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+.terneraMenu h4{
+    display: inline-block;
+    padding: 3px;
+}
+
+.terneraMenu p{
+    display: inline-block;
+    padding: 3px;
+}
+
+.terneraMenu img{
+    width: 125px;
+    height: 150px;
+    padding: 3px;
+}
+
+.polloMenu{
+    background-color: #9dd6add7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+.polloMenu h4{
+    display: inline-block;
+    padding: 3px;
+}
+
+.polloMenu p{
+    display: inline-block;
+    padding: 3px;
+}
+
+.polloMenu img{
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+}
+
+.patatasMenu{
+    background-color: #9dd6add7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+.patatasMenu h4{
+    display: inline-block;
+    padding: 3px;
+}
+
+.patatasMenu p{
+    display: inline-block;
+    padding: 3px;
+}
+
+.patatasMenu img{
+    width: 125px;
+    height: 150px;
+    padding: 3px;
+}
+
+.vegetarianaMenu{
+    background-color: #9dd6add7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+.vegetarianaMenu h4{
+    display: inline-block;
+    padding: 3px;
+}
+
+.vegetarianaMenu p{
+    display: inline-block;
+    padding: 3px;
+}
+
+.vegetarianaMenu img{
+    width: 155px;
+    height: 153px;
+    padding: 3px;
+}
+
+.tituloDulces{
+    text-align: center;
+}
+
+.menuDulce{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.nutellaMenu{
+    background-color: #9dd6add7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+.nutellaMenu h4{
+    display: inline-block;
+    padding: 3px;
+}
+
+.nutellaMenu p{
+    display: inline-block;
+    padding: 3px;
+}
+
+.nutellaMenu img{
+    width: 125px;
+    height: 150px;
+    padding: 3px;
+}
+
+.ddlMenu{
+    background-color: #9dd6add7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 50px;
+}
+
+.ddlMenu h4{
+    display: inline-block;
+    padding: 3px;
+}
+
+.ddlMenu p{
+    display: inline-block;
+    padding: 3px;
+}
+
+.ddlMenu img{
+    width: 125px;
+    height: 150px;
+    padding: 3px;
+}
+
+.chocoNMenu{
+    background-color: #9dd6add7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.chocoNMenu h4{
+    display: inline-block;
+    padding: 3px;
+}
+
+.chocoNMenu p{
+    display: inline-block;
+    padding: 3px;
+}
+
+.chocoNMenu img{
+    width: 125px;
+    height: 150px;
+    padding: 3px;
+}
+
+
+.chocoBMenu{
+    background-color: #9dd6add7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.chocoBMenu h4{
+    display: inline-block;
+    padding: 3px;
+}
+
+.chocoBMenu p{
+    display: inline-block;
+    padding: 3px;
+}
+
+.chocoBMenu img{
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+}
+
+.footerMenu{
+    background-color: #9DD6AD;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logoFooterMenu{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}
+
+.logoInstagramMenu{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.logoFacebookMenu{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.logoTwitterMenu{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.headerCon{
+    background-color: #9DD6AD;
+}
+
+.imagenLogoCon{
+    width: 100px;
+    height: 100px;
+
+    display: inline-block;
+
+    position: relative;
+     top: 3px;
+     left: 20px;
+}
+
+.menuCon ul{
+    position: absolute;
+    bottom: 535px;
+    left: 50%
+}
+
+.menuCon ul li{
+    display: inline-block;
+
+    letter-spacing: 2px;
+}
+
+
+.fieldsetCon{
+    background-color: #e6e94857;
+}
+
+.labelConE{
+    display: block;
+}
+
+.labelConC{
+    display: block;
+}
+
+.labelConT{
+    display: block;
+}
+
+.imagenCon{
+    display: inline;
+
+    width: 450px;
+    height: 250px;
+
+    position: absolute;
+    bottom: 190px;
+    left: 800px;
+}
+
+.footerCon{
+    background-color: #9DD6AD;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+}
+
+.logoInstagramCon{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.logoFacebookCon{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.logoTwitterCon{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding: 5px;
+}
+
+.logoFooterCon{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    position: absolute;
+    bottom: 8px;
+    left: 1200px;
+}
