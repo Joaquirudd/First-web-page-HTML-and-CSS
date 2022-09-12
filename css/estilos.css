@@ -190,6 +190,17 @@ a{
     align-items: center;
 }
 
+.animacionTop1{
+    width: 400px;
+    height: 300px;
+    transition: width 2s, height 2s;
+}
+
+.animacionTop1 :hover{
+    width: 405px;
+    height: 305px;
+}
+
 .divNuestroTop2{
     display: flex;
     justify-content: center;
@@ -761,6 +772,12 @@ align-content: center;
     width: 125px;
     height: 150px;
     padding: 3px;
+    transition: width 1s, height 1s;
+}
+
+.terneraMenu img:hover{
+    width: 135px;
+    height: 160px;
 }
 
 .polloMenu{
@@ -787,6 +804,12 @@ align-content: center;
     width: 150px;
     height: 150px;
     padding: 3px;
+    transition: width 1s, height 1s;
+}
+
+.polloMenu img:hover{
+    width: 160px;
+    height: 160px;
 }
 
 .patatasMenu{
@@ -813,6 +836,12 @@ align-content: center;
     width: 125px;
     height: 150px;
     padding: 3px;
+    transition: width 1s, height 1s;
+}
+
+.patatasMenu img:hover{
+    width: 135px;
+    height: 160px;
 }
 
 .vegetarianaMenu{
@@ -839,6 +868,12 @@ align-content: center;
     width: 155px;
     height: 153px;
     padding: 3px;
+    transition: width 1s, height 1s;
+}
+
+.vegetarianaMenu img:hover{
+    width: 165px;
+    height: 163px;
 }
 
 .tituloDulces{
@@ -874,8 +909,14 @@ align-content: center;
 
 .nutellaMenu img{
     width: 125px;
-    height: 150px;
+    height: 160px;
     padding: 3px;
+    transition: width 1s, height 1s;
+}
+
+.nutellaMenu img:hover{
+    width: 135px;
+    height: 170px;
 }
 
 .ddlMenu{
@@ -899,9 +940,15 @@ align-content: center;
 }
 
 .ddlMenu img{
-    width: 125px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     padding: 3px;
+    transition: width 1s, height 1s;
+}
+
+.ddlMenu img:hover{
+    width: 170px;
+    height: 170px;
 }
 
 .chocoNMenu{
@@ -929,8 +976,13 @@ align-content: center;
     width: 125px;
     height: 150px;
     padding: 3px;
+    transition: width 1s, height 1s;
 }
 
+.chocoNMenu img:hover{
+    width: 135px;
+    height: 160px;
+}
 
 .chocoBMenu{
     background-color: #9dd6add7;
@@ -957,6 +1009,12 @@ align-content: center;
     width: 150px;
     height: 150px;
     padding: 3px;
+    transition: width 1s, height 1s;
+}
+
+.chocoBMenu img:hover{
+    width: 160px;
+    height: 160px;
 }
 
 .footerMenu{
