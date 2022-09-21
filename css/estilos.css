@@ -5,7 +5,7 @@
 .contenedor{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-rows: -1fr 1fr 0.2fr;
     grid-template-areas: 
     "header header"
     "main main"
@@ -15,7 +15,7 @@
 @media screen and (max-width: 768px) {
     .contenedor{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+        grid-template-rows: -1fr 1fr 1fr 0.1fr;
         grid-template-areas: 
     "header"
     "main"
@@ -58,7 +58,7 @@
 @media screen and (max-width: 500px) {
     .contenedor{
         grid-template-columns: 0.5fr;
-        grid-template-rows: 0.1fr 0.5fr 1fr 0.1fr;
+        grid-template-rows: -1fr 0.5fr 1fr 0.1fr;
         grid-template-areas: 
     "header"
     "main"
@@ -123,29 +123,8 @@
     grid-area: header;
 }
 
-.headerIndex img{
-    display: flex;
-}
-
-.headerIndex ul{
-    display: flex;
-}
-
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    letter-spacing: 2px;
-}
-
-.logoInicio{
-    width: 100px;
-    height: 100px;
-    display: inline-block;
-}
-
-.menuPrincipalIndex ul li{
-    display: inline-block;
+.bg-backColor{
+    background-color: #9DD6AD;
 }
 
 .mainIndex{
@@ -163,21 +142,15 @@ a{
 }
 
 .imagenInicio1{
-    width: 350px;
-    height: 300px;
-    padding: 50px;
+    height: 50px;
 }
 
 .imagenInicio2{
-    width: 310px;
-    height: 300px;
-    padding: 50px;
+    height: 50px;
 }
 
 .imagenInicio3{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
+    height: 50px;
 }
 
 .divNuestroTop1{
@@ -327,20 +300,6 @@ a{
 .logoInicioOss{
     width: 100px;
     height: 100px;
-
-    position: relative;
-    top: 2px;
-    left: 40px;
-}
-
-.menuOss ul{
-    position: absolute;
-    bottom: 25px;
-    left: 50%
-}
-
-.menuOss ul li{
-    display: inline-block;
 }
 
 .tituloOKSC{
@@ -351,28 +310,9 @@ a{
     text-align:center;
 }
 
-.botonvmdc{
-    background-color: #9DD6AD;
-
-    position: relative;
-    left: 550px;
-    right: 50%;
-
-    padding: 10px;
-}
-
 .imagenOss{
-    width: 300px;
-    height: 300px;
-
-    display: block;
-
-    position: relative;
-    top: 30px;
-    left: 520px;
-    
-    padding-top: 50px;
-    padding-bottom: 100px;
+    width: 500px;
+    height: 500px;
 }
 
 .footerOss{
@@ -432,57 +372,40 @@ a{
 
 .headerEn{
     background-color: #9DD6AD;
-    position: relative;
 }
 
 .logoInicioEn{
     width: 100px;
     height: 100px;
+}
 
+.divsEn{
     position: relative;
-    top: 2px;
-    left: 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.menuPrincipalEn ul{
-    position: absolute;
-    bottom: 25px;
-    left: 50%
+.tituloEnc{
+    padding-bottom: 20px;
 }
 
-.menuPrincipalEn ul li{
+.tituloEs{
     display: inline-block;
-}
-
-.tituloEn{
     text-align: center;
+    align-content: flex-start;
+    padding-top: 10px;
 }
 
-.tituloEstepona{
-    display: inline-block;
-    
-    position: relative;
-    bottom: 250px;
-    left: 25px;
-}
-
-.direccionEstepona{
-    display: inline-block;
-
-    position: relative;
-    right: 75px;
-    bottom: 220px;
-}
 
 .mapasEN{
-    display: inline-block;
+    display: inline;
 
-    width: 400px;
-    height: 300px;
+    width: 350px;
+    height: 250px;
 
-    position: relative;
-    left: 20px;
+    padding-right: 10px;
 }
+
 
 .horarioEstepona{
     display: inline-block;
@@ -491,41 +414,18 @@ a{
 
     list-style-type: none;
 
-    padding: 2px;
-
     letter-spacing: 2px;
 
-    position: relative;
-    right: 230px;
-    bottom: 50px;
+    margin-left: 100px;
 }
-
-.imagenEstepona{
-
-    display: inline-block;
-
-    width: 400px;
-    height: 300px;
-
-    position: relative;
-    right: 50px;
-}
-
 
 .tituloHuelin{
     display: inline-block;
-    
-    position: relative;
-    bottom: 250px;
-    left: 25px;
+    padding-top: 10px;
 }
 
 .direccionHuelin{
     display: inline-block;
-
-    position: relative;
-    right: 46px;
-    bottom: 220px;
 }
 
 .horarioHuelin{
@@ -535,45 +435,18 @@ a{
 
     list-style-type: none;
 
-    padding: 2px;
-
     letter-spacing: 2px;
 
-    position: relative;
-    right: 290px;
-    bottom: 50px;
+    margin-left: 100px;
 }
-
-.imagenHuelin{
-
-    display: inline-block;
-
-    width: 400px;
-    height: 300px;
-
-    position: absolute;
-    top: 550px;
-    right: 0px;
-    bottom: 0px;
-    left: 880px;
-}
-
-
 
 .tituloTeatinos{
     display: inline-block;
-    
-    position: relative;
-    bottom: 250px;
-    left: 25px;
+    padding-top: 10px;
 }
 
 .direccionTeatinos{
     display: inline-block;
-
-    position: relative;
-    right: 60px;
-    bottom: 220px;
 }
 
 .horarioTeatinos{
@@ -587,36 +460,17 @@ a{
 
     letter-spacing: 2px;
 
-    position: relative;
-    right: 270px;
-    bottom: 50px;
-}
-
-.imagenTeatinos{
-
-    display: inline-block;
-
-    width: 400px;
-    height: 300px;
-
-    position: absolute;
-    top: 890px;
-    right: 0px;
-    bottom: 0px;
-    left: 880px;
-    
+    margin-left: 100px;
 }
 
 .footerEn{
     background-color: #9DD6AD;
-
-    position: relative;
 }
 
 .contenedorMenu{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: 0.2fr 1fr 1fr 0.2fr;
+   grid-template-rows: -1fr 1fr 1fr 0.1fr;
    grid-template-areas:
    "header header"
    "main main"
@@ -627,7 +481,7 @@ a{
 @media screen and (max-width:768px){
  .contenedorMenu{
    grid-template-columns: 1fr;
-   grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
+   grid-template-rows: -1fr 0.5fr 0.5fr 0.1fr;
    grid-template-areas: 
    "header"
    "main"
@@ -657,7 +511,7 @@ a{
 @media screen and (max-width:500px){
  .contenedorMenu{
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: -1fr 0.5fr 0.5fr 0.1fr;
     grid-template-areas: 
     "header"
     "main"
@@ -697,7 +551,6 @@ align-content: center;
 
 .bodyMenu{
     font-family: 'Lato', sans-serif;
-    display: flex;
 }
 
 .headerMenu{
@@ -709,13 +562,7 @@ align-content: center;
     grid-area: header;
 }
 
-.headerMenu img{
-    display: flex;
-}
 
-.headerMenu ul{
-    display: flex;
-}
 
 .logoInicioMenu{
     width: 100px;
@@ -723,9 +570,7 @@ align-content: center;
     display: inline-block;
 }
 
-.headerMenu ul li{
-    display: inline-block;
-}
+
 
 
 .tituloMenu{
@@ -1087,27 +932,30 @@ align-content: center;
     background-color: #e6e94857;
 }
 
+.labelConN{
+    padding: 10px;
+}
+
+.labelConA{
+    padding: 10px;
+}
+
 .labelConE{
-    display: block;
+    padding: 10px;
 }
 
 .labelConC{
     display: block;
+    padding: 10px;
 }
 
 .labelConT{
     display: block;
+    padding: 10px;
 }
 
-.imagenCon{
-    display: inline;
-
-    width: 450px;
-    height: 250px;
-
-    position: absolute;
-    bottom: 190px;
-    left: 800px;
+.botones{
+    padding-top: 15pt;
 }
 
 .footerCon{

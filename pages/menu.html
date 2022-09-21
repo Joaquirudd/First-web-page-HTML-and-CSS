@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap" rel="stylesheet">
 
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 </head>
 
 <body class="bodyMenu">
@@ -22,97 +26,162 @@
 
     <header class="headerMenu">
 
-      <img src="../imagenes/logo-tys-azul.jpg" alt="Logo Ton&Son" title="Logo Ton&Son" class="logoInicioMenu">
-
-     <nav class="menuMenu">
-      <ul>
-        <li> <a href="../index.html"> Inicio | </a> </li> 
-        <li> <a href="cafe.html"> Oss Café | </a></li>
-        <li> <a href="encontrarnos.html"> Donde Encontrarnos? | </a></li>
-        <li> <a href="contacto.html"> Contactanos </a></li>
-      </ul>
-     </nav>
+      <nav class="navbar bg-backColor">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../imagenes/logo-tys-azul.jpg" alt="Bootstrap" width="100" height="100">
+          </a>
+        </div>
+      </nav>
+        
+      <nav class="navbar navbar-expand-lg bg-backColor">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <div class="d-flex justify-content-end"></div>
+                <a class="nav-link active" aria-current="page" href="cafe.html">ÖSS KAFFE</a>
+                <a class="nav-link active" href="menu.html">¡Nuestras Crepas!</a>
+                <a class="nav-link active" href="encontrarnos.html">¿Donde Encontrarnos?</a>
+                <a class="nav-link active" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     </header>
 
     <main class="mainMenu">
 
-     <h1 class="tituloMenu"> Menú </h1>
+      <div class="d-flex justify-content-center">
+        <h1 class="pt-4">  Menú </h2>
+      </div>
 
-      <h2 class="tituloSaladas"> Crepas Saladas: </h2>
+      <div class="d-flex justify-content-center">
+        <h2 class="p-4"> Crepas Saladas </h2>
+      </div>
 
       <div class="menuSalado">
 
-        <div class="terneraMenu">
-          <img src="../imagenes/crepa-fondo-maderaazul.jpg" alt="CREPA DE TERNERA">
-          <h4> Crepa ternera: </h4>
-          <p> Lechuga, tomate, cebolla morada y mayonesa </p>
+        <div class="divSaladas1">
+        <div class="card mb-5" style="width: 18rem;">
+          <img src="../imagenes/ternera.jpeg" class="card-img-top" alt="CREPA DE TERNERA">
+          <div class="card-body">
+            <p class="card-text">Lechuga, tomate, cebolla morada y mayonesa</p>
+          </div>
         </div>
 
-        <div class="polloMenu">
-          <img src="../imagenes/crepa-pollo.jpeg" alt="CREPA DE POLLO">
-          <h4> Crepa pollo: </h4>
-          <p> Lechuga, tomate cherry, bacon y salsa cesar </p>
+        <div class="card mb-5" style="width: 18rem;">
+          <img src="../imagenes/pollo.jpeg" class="card-img-top" alt="CREPA DE POLLO CESAR">
+          <div class="card-body">
+            <p class="card-text">Lechuga, tomate cherry, bacon y salsa cesar</p>
+          </div>
         </div>
-
-        <div class="patatasMenu">
-          <img src="../imagenes/crepa-patatasBravas.jpeg" alt="CREPA DE PATATAS BRAVAS">
-          <h4> Crepa patatas bravas: </h4>
-          <p> Chorizo, cebolla caramelizada y salsa picante </p>
-        </div>
-
-        <div class="vegetarianaMenu">
-          <img src="../imagenes/crepa-vegetariana.jpeg" alt="CREPA VEGETARIANA">
-          <h4> Crepa vegetariana: </h4>
-          <p> Mix de vegetales y queso emmental </p>
-        </div>
-
       </div>
 
-      <h2 class="tituloDulces"> Crepas Dulces: </h2>
+      <div class="divSaladas2">
+        <div class="card mb-5" style="width: 18rem;">
+          <img src="../imagenes/patatas.jpeg" class="card-img-top" alt="CREPA DE PATATAS BRAVAS">
+          <div class="card-body">
+            <p class="card-text">Chorizo, cebolla caramelizada y salsa picante</p>
+          </div>
+        </div>
+
+        <div class="card mb-5" style="width: 18rem;">
+          <img src="../imagenes/vegetariana.jpeg" class="card-img-top" alt="CREPA VEGETARIANA">
+          <div class="card-body">
+            <p class="card-text">Mix de vegetales y queso emmental</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <h2 class="p-5"> Crepas Dulces </h2>
+      </div>
 
       <div class="menuDulce">
 
-        <div class="nutellaMenu">
-          <img src="../imagenes/crepa-nutella.jpeg" alt="CREPA DE NUTELLA">
-          <h4> Crepa nutella </h4>
-          <p> Elige entre acompañarlo con fresas o platano! </p>
+        <div class="divDulces1">
+        <div class="card mb-5" style="width: 18rem;">
+          <img src="../imagenes/nutella.jpeg" class="card-img-top" alt="CREPA DE NUTELLA">
+          <div class="card-body">
+            <p class="card-text">Añadele fresas o frutos rojos!</p>
+          </div>
         </div>
 
-        <div class="ddlMenu">
-          <img src="../imagenes/local-teatinos.jpg" alt="CREPA DE DULCE DE LECHE">
-          <h4> Crepa delce de leche </h4>
-          <p> Acompañado con platano o frutos rojos </p>
+        <div class="card mb-5" style="width: 18rem;">
+          <img src="../imagenes/ddl.jpeg" class="card-img-top" alt="CREPA DE DULCE DE LECHE">
+          <div class="card-body">
+            <p class="card-text">Acompañalo con platano!</p>
+          </div>
+        </div>
+      </div>
+
+        <div class="divDulces2">
+        <div class="card mb-5" style="width: 18rem;">
+          <img src="../imagenes/chocoN.jpeg" class="card-img-top" alt="CREPA DE CHOCOLATE NEGRO">
+          <div class="card-body">
+            <p class="card-text">Añadele fresas o frutos rojos!</p>
+          </div>
         </div>
 
-        <div class="chocoNMenu">
-          <img src="../imagenes/crepa-chocoN.jpeg" alt="CREPA DE CHOCOLATE NEGRO">
-          <h4> Crepa chocolate negro </h4>
-          <p> Acompañado con fresas o platano </p>
+        <div class="card mb-5" style="width: 18rem;">
+          <img src="../imagenes/chocoB.jpeg" class="card-img-top" alt="CREPA DE CHOCOLATE BLANCO">
+          <div class="card-body">
+            <p class="card-text">Acompañalo con fresas o frutos rojos!</p>
+          </div>
         </div>
-
-        <div class="chocoBMenu">
-          <img src="../imagenes/familia-isa.jpeg" alt="CREPA DE CHOCOLATE BLANCO">
-          <h4> Crepa chocolate blanco </h4>
-          <p> Elige entre acompañarlo con fresas o frutos rojos! </p>
-        </div>
-
+       </div>
       </div>
     
     </main>
     
     <footer class="footerMenu">
 
-      <div>
-        <a href="https://www.instagram.com/" target="_blank"> <img src="../imagenes/logo-instagram.png" alt="Instagram" class="logoInstagramMenu"> </a>
-        <a href="https://www.facebook.com/" target="_blank"> <img src="../imagenes/logo-facebook.png" alt="facebook" class="logoFacebookMenu"> </a>
-        <a href="https://twitter.com/login" target="_blank"> <img src="../imagenes/logo-twitter.png" alt="twitter" class="logoTwitterMenu"> </a>
-      </div>  
-           
-      <p class="TLDROSSMenu"> Todos los derechos reservados* </p>
-      
-      <img src="../imagenes/logo-tys-azul.jpg" alt="Logo Ton&Son" title="Logo Ton&Son" class="logoFooterMenu">
+      <nav class="navbar bg-backColor">
+        <div class="container">
+          <a class="navbar-brand" href="https://www.facebook.com/">
+            <img src="../imagenes/logo-facebook.png" alt="Facebook" width="50" height="50">
+          </a>
+        </div>
+      </nav>
     
+      <nav class="navbar bg-backColor">
+        <div class="container">
+          <a class="navbar-brand" href="https://twitter.com/?lang=en">
+            <img src="../imagenes/logo-twitter.png" alt="Twitter" width="50" height="50">
+          </a>
+        </div>
+      </nav>
+    
+      <nav class="navbar bg-backColor">
+        <div class="container">
+          <a class="navbar-brand" href="https://www.instagram.com/">
+            <img src="../imagenes/logo-instagram.png" alt="Instagram" width="50" height="50">
+          </a>
+        </div>
+      </nav>
+             
+      <nav class="navbar bg-backColor">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            esta es una pagina sin fines de lucro
+          </span>
+        </div>
+      </nav>
+      
+      <nav class="navbar bg-backColor">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="../imagenes/logo-tys-azul.jpg" alt="Bootstrap" width="100" height="100">
+          </a>
+        </div>
+      </nav>
+
     </footer>
 
   </div>
