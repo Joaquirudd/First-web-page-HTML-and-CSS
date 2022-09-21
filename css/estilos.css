@@ -190,6 +190,53 @@
     text-decoration: none;
 }
 
+.contenedorOss{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: -1fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "main main"
+    "footer footer";
+ }
+ 
+ @media screen and (max-width:500px){
+     .contenedorOss{
+        grid-template-columns: 1fr;
+        grid-template-rows: -1fr 0.5fr 0.5fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer";
+    }
+    
+    .headerMenu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .headerMenu img{
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .logoInicioMenu{
+        margin-top: 20px;
+    }
+    
+    .ptamaño500{
+        font-size:small;
+    }
+    
+    .tamaño500{
+        width: 40px;
+        height: 40px;
+    }
+    
+    }
+
 .bodyOss{
     font-family: 'Lato', sans-serif;
 }
@@ -266,7 +313,223 @@
     left: 80%;
 }
 
+.contenedorEn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: -1fr 1fr 1fr 0.1fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "main main"
+    "footer footer";
+ }
 
+ @media screen and (max-width: 1017px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: -1fr 1fr 1fr 0.1fr;
+        grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+    }
+
+    .headerMenu img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .headerMenu a{
+        font-size: 15px;
+    }
+
+    .mapasEN{
+        padding-bottom: 5px;
+    }
+
+    .hHuelin{
+        position: relative;
+    }
+
+    .horarioHuelin{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    .hTeatinos{
+        position: relative;
+    }
+
+    .horarioTeatinos{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    .tamaño{
+        font-size: larger;
+    }
+}
+
+ @media screen and (max-width: 768px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: -1fr 1fr 1fr 0.1fr;
+        grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+    }
+
+    .headerMenu img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .headerMenu a{
+        font-size: 15px;
+    }
+
+    .mapasEN{
+        padding-bottom: 5px;
+    }
+
+    .hHuelin{
+        position: relative;
+    }
+
+    .horarioHuelin{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    .hTeatinos{
+        position: relative;
+    }
+
+    .horarioTeatinos{
+        position: absolute;
+        top: 50px;
+        right: 20px;
+    }
+
+    .tamaño{
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width:703px){
+    .contenedorEn{
+       grid-template-columns: 1fr;
+       grid-template-rows: -1fr 0.5fr 0.5fr 0.1fr;
+       grid-template-areas: 
+       "header"
+       "main"
+       "main"
+       "footer";
+   }
+   
+   .headerMenu{
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .headerMenu img{
+       justify-content: center;
+       align-content: center;
+   }
+   
+   .logoInicioMenu{
+       margin-top: 20px;
+   }
+
+   .horarioHuelin{
+       visibility: hidden
+   }
+   
+   .divsEn{
+       display: flex;
+       flex-direction: column-reverse;
+   }
+
+   .mapasEN{
+       margin-left: 170px;
+   }
+
+
+   .horarioTeatinos {
+       visibility: hidden
+   }
+   
+   .ptamaño500{
+       font-size:small;
+   }
+   
+   .tamaño500{
+       width: 40px;
+       height: 40px;
+   }
+   
+   }
+
+ 
+ @media screen and (max-width:500px){
+     .contenedorEn{
+        grid-template-columns: 1fr;
+        grid-template-rows: -1fr 0.5fr 0.5fr 0.1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer";
+    }
+    
+    .headerMenu{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .headerMenu img{
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .logoInicioMenu{
+        margin-top: 20px;
+    }
+
+    .horarioHuelin{
+        visibility: hidden
+    }
+    
+    .divsEn{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .mapasEN{
+        margin-left: 75px;
+    }
+
+
+    .horarioTeatinos {
+        visibility: hidden
+    }
+    
+    .ptamaño500{
+        font-size:small;
+    }
+    
+    .tamaño500{
+        width: 40px;
+        height: 40px;
+    }
+    
+    }
 
 .bodyEn{
     font-family: 'Lato', sans-serif;
@@ -305,7 +568,9 @@
     width: 350px;
     height: 250px;
 
+    padding-top: 5px;
     padding-right: 10px;
+    padding-bottom: 5px;
 }
 
 
@@ -318,7 +583,7 @@
 
     letter-spacing: 2px;
 
-    margin-left: 100px;
+    margin-left: 100%;
 }
 
 .tituloHuelin{
@@ -431,13 +696,6 @@
     align-content: center;
 }
 
-.headerMenu ul{
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-}
-
 .logoInicioMenu{
     margin-top: 20px;
 }
@@ -542,62 +800,48 @@
     padding: 5px;
 }
 
+@media screen and (max-width:500px){
+    .contenedorEn{
+       grid-template-columns: 1fr;
+       grid-template-rows: -1fr 0.5fr 0.5fr 0.1fr;
+       grid-template-areas: 
+       "header"
+       "main"
+       "main"
+       "footer";
+   }
+   
+   .headerMenu{
+       display: flex;
+       flex-direction: column;
+   }
+   
+   .headerMenu img{
+       justify-content: center;
+       align-content: center;
+   }
+   
+   .logoInicioMenu{
+       margin-top: 20px;
+   }
+   
+   .ptamaño500{
+       font-size:small;
+   }
+   
+   .tamaño500{
+       width: 40px;
+       height: 40px;
+   }
+   }
+
 .headerCon{
     background-color: #9DD6AD;
 }
 
-.imagenLogoCon{
-    width: 100px;
-    height: 100px;
-
-    display: inline-block;
-
-    position: relative;
-     top: 3px;
-     left: 20px;
-}
-
-.menuCon ul{
-    position: absolute;
-    bottom: 535px;
-    left: 50%
-}
-
-.menuCon ul li{
-    display: inline-block;
-
-    letter-spacing: 2px;
-}
-
-
-.fieldsetCon{
-    background-color: #e6e94857;
-}
-
-.labelConN{
-    padding: 10px;
-}
-
-.labelConA{
-    padding: 10px;
-}
-
-.labelConE{
-    padding: 10px;
-}
-
-.labelConC{
-    display: block;
-    padding: 10px;
-}
-
-.labelConT{
-    display: block;
-    padding: 10px;
-}
-
-.botones{
-    padding-top: 15pt;
+.botonCon{
+    display: flex;
+    justify-content: center;
 }
 
 .footerCon{
