@@ -1,0 +1,39 @@
+.mainIndex{
+    grid-area: main;
+}
+
+.divNuestroTop1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 5px;
+    img{
+        width: 400px;
+        height: 300px; 
+    }
+}
+
+.divNuestroTop2{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    img{
+        width: 400px;
+        height: 300px; 
+    }
+}
+
+.animacionTop1{
+    width: 400px;
+    height: 300px;
+    transition: width 2s, height 2s;  
+}
+
+.animacionTop1 :hover{
+    width: 405px;
+    height: 305px;
+}

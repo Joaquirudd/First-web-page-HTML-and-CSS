@@ -1,0 +1,19 @@
+
+.mainMenu{
+    position: relative;
+    grid-area: main;
+}
+
+.menuSalado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menuDulce{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -1,0 +1,36 @@
+@import "media";
+@import "index";
+@import "cafe";
+@import "contacto";
+@import "encontrarnos";
+@import "menu";
+
+$colorPrincipal: #9DD6AD;
+
+.tipoDeLetra{
+    font-family: 'Lato', sans-serif;
+}
+
+.headerTYS{
+    background-color: $colorPrincipal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    grid-area: header;
+}
+
+.bg-backColor{
+    background-color: $colorPrincipal;
+}
+
+.footerTYS{
+    background-color: $colorPrincipal;
+    font-family: 'Roboto Condensed', sans-serif;
+    position: relative;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}

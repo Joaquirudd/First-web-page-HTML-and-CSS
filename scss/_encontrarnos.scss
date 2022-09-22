@@ -1,0 +1,26 @@
+.divsEn{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    h2{
+        display: inline-block;
+        text-align: center;
+        align-content: flex-start;
+        padding-top: 10px; 
+    }
+    iframe{
+        width: 350px;
+        height: 250px;
+        padding-top: 5px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+    }
+    ul{
+        display: inline-block;
+        background-color: #9DD6AD;
+        list-style-type: none;
+        padding: 2px;
+        letter-spacing: 2px;
+        margin-left: 100px;
+    }
+}
