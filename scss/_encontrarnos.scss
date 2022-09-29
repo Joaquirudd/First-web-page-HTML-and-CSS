@@ -1,3 +1,8 @@
+@mixin altoAncho ($alto, $ancho) {
+    width: $ancho;
+    height: $alto;
+}
+
 .divsEn{
     position: relative;
     display: flex;
@@ -9,11 +14,10 @@
         padding-top: 10px; 
     }
     iframe{
-        width: 350px;
-        height: 250px;
         padding-top: 5px;
         padding-right: 10px;
         padding-bottom: 5px;
+        @include altoAncho(250px, 350px)
     }
     ul{
         display: inline-block;

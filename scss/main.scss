@@ -5,7 +5,7 @@
 @import "encontrarnos";
 @import "menu";
 
-$colorPrincipal: #9DD6AD;
+$colorPrincipal: #8DB1AB;
 
 .tipoDeLetra{
     font-family: 'Lato', sans-serif;
@@ -18,6 +18,9 @@ $colorPrincipal: #9DD6AD;
     align-items: center;
     position: relative;
     grid-area: header;
+    a{
+        color: white !important;
+    }
 }
 
 .bg-backColor{

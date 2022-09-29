@@ -1,0 +1,11 @@
+
+.tituloOss{
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+.tituloOss--subtitulo{
+    @extend .tituloOss;
+    margin-bottom: 10px;
+}
