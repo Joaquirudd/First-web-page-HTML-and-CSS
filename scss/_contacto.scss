@@ -1,4 +1,25 @@
-.botonCon{
+.tituloContacto{
+    h1{
+        text-align: center;
+        padding-top: 10px;
+    }
+    p{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+}
+
+.formularioContacto{
+    text-align: center;
+    font-size: larger;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.categorias{
+    margin: 20px;
+}
+
+.boton{
+    padding: 10px;
 }
