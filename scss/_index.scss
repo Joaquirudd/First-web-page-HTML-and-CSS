@@ -2,43 +2,58 @@
     grid-area: main;
 }
 
-$alturaImagenesTop: (
-   ancho: 400px,
-   alto: 300px 
-);
-
-.divNuestroTop1{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 5px;
-    img{
-        width: map-get($alturaImagenesTop, ancho);
-        height: map-get($alturaImagenesTop, alto);
-    }
-}
-
-.divNuestroTop2{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-evenly;
+.titulosIndex{
+    font-weight: bolder;
+    text-align: center;
     padding-top: 10px;
+    padding-bottom: 10px;
+    color: #74928d;
+}
+
+.titulosIndex--sub{
+    @extend.titulosIndex;
+    color: white;
+    background-color: #8DB1AB;
+    margin-top: 10px;
+}
+
+.top1-2{
+    display: flex;
+    justify-content: space-evenly;
     img{
-        width: map-get($alturaImagenesTop, ancho);
-        height: map-get($alturaImagenesTop, alto);
+        width: 30%;
+        height: auto;
+        transition: width 1s, height 1s; 
+        margin: 5px;
     }
 }
 
-.animacionTop1{
-    width: 400px;
-    height: 300px;
-    transition: width 2s, height 2s;  
+.top1-2 :hover{
+    width: 30.5%;
+    height: auto;
 }
 
-.animacionTop1 :hover{
-    width: 405px;
-    height: 305px;
+.top3-4{
+    display: flex;
+    justify-content: space-evenly;
+    img{
+        width: 30%;
+        height: auto;
+        transition: width 1s, height 1s; 
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.top3-4 :hover{
+    width: 30.5%;
+    height: auto;
+}
+
+.resaltador{
+    font-weight: bolder;
+}
+
+.colorBlanco{
+    color: white;
 }

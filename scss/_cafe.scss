@@ -1,11 +1,16 @@
 
 .tituloOss{
   text-align: center;
+  font-weight: bolder;
   margin-top: 5px;
+  color: #74928d;
 }
 
 
 .tituloOss--subtitulo{
     @extend .tituloOss;
     margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #8DB1AB;
 }

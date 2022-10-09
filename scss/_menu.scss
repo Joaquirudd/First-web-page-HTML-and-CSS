@@ -4,6 +4,20 @@
     grid-area: main;
 }
 
+.titulosMenu{
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #74928d
+}
+
+.titulosMenu--sub{
+    @extend.titulosMenu;
+    background-color: #8DB1AB;
+    color: white;
+}
+
 .imgMenu{
     width: 100%;
     padding-top: 5px;
@@ -19,6 +33,9 @@
     }
     h6{
         text-align: center;
+        font-weight: bold;
+        font-size: large;
+        color: #74928d;
     }
     p{
         text-align: center;
@@ -35,6 +52,9 @@
     }
     h6{
         text-align: center;
+        font-weight: bold;
+        font-size: large;
+        color: #74928d;
     }
     p{
         text-align: center;

@@ -1,9 +1,9 @@
-@import "media";
 @import "index";
 @import "cafe";
 @import "contacto";
 @import "encontrarnos";
 @import "menu";
+@import "media";
 
 $colorPrincipal: #8DB1AB;
 
@@ -25,6 +25,11 @@ $colorPrincipal: #8DB1AB;
 
 .bg-backColor{
     background-color: $colorPrincipal;
+}
+
+.logoRedes{
+    width: auto;
+    height: 40px;
 }
 
 .footerTYS{

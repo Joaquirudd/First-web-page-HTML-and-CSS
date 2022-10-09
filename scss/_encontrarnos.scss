@@ -1,79 +1,62 @@
-@mixin altoAncho ($alto, $ancho) {
-    width: $ancho;
-    height: $alto;
+.tituloEncontrarnos{
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #74928d
 }
 
 .estepona{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    margin-top: 30px;
     h2{
         display: inline-block;
-        text-align: center;
-        padding-top: 10px; 
+        color: #74928d
     }
     iframe{
-        padding-top: 5px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        @include altoAncho(250px, 350px)
-    }
-    ul{
         display: inline-block;
-        background-color: #9DD6AD;
-        list-style-type: none;
-        padding: 2px;
-        letter-spacing: 2px;
-        margin-left: 100px;
+    }
+    img{
+        display: inline-block;
+        width: 40%;
+        height: auto;
     }
 }
 
 .huelin{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    margin-top: 50px;
     h2{
         display: inline-block;
-        text-align: center;
-        padding-top: 10px; 
+        color: #74928d
     }
     iframe{
-        padding-top: 5px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        @include altoAncho(250px, 350px)
-    }
-    ul{
         display: inline-block;
-        background-color: #9DD6AD;
-        list-style-type: none;
-        padding: 2px;
-        letter-spacing: 2px;
-        margin-left: 100px;
+    }
+    img{
+        display: inline-block;
+        width: 40%;
+        height: auto;
     }
 }
 
 .teatinos{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    margin-top: 30px;
     h2{
         display: inline-block;
-        text-align: center;
-        padding-top: 10px; 
+        color: #74928d
     }
     iframe{
-        padding-top: 5px;
-        padding-right: 10px;
-        padding-bottom: 5px;
-        @include altoAncho(250px, 350px)
-    }
-    ul{
         display: inline-block;
-        background-color: #9DD6AD;
-        list-style-type: none;
-        padding: 2px;
-        letter-spacing: 2px;
-        margin-left: 100px;
+    }
+    img{
+        display: inline-block;
+        width: 40%;
+        height: auto;
+        margin-bottom: 10px;
     }
 }
